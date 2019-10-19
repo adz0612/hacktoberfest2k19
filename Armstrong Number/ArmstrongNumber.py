@@ -1,7 +1,19 @@
-number, new_number  = input("Enter a number to check if it is an Armstrong Number: "), 0
-for i in number:
-    new_number += int(i) ** 3
-if number == new_number:
-    print("The number is an Armstrong number")
+
+
+
+    #My code
+
+ arm = input("Enter a number")
+size = len(arm)
+temp =0
+
+if int(arm)<0:
+    print("Bad input")
 else:
-    print("It is not an Armstrong Number")
+
+    for i in range (size):
+        temp = temp+int(arm[i])**(size)
+    if temp == int(arm):
+        print("Armstrong")
+    else:
+        print("Not Armstrong")
